@@ -33,10 +33,6 @@ public class Repository {
         this.customArrays = customArrays;
     }
 
-    public Repository(List<CustomArray> customArrays) {
-        this.customArrays = customArrays;
-    }
-
     public Repository() {
         customArrays = new ArrayList<>();
     }

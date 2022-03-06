@@ -16,9 +16,9 @@ public class CustomArrayCountElements implements Comparator<CustomArray> {
             return 1;
         } else if (CustomCheck.isLengthZero(o1.getArray()) || count1 < count2) {
             return -1;
-        } else {
-            return 0;
         }
+        return 0;
+
 
     }
 }

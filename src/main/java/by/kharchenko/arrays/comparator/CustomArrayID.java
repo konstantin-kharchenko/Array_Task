@@ -12,8 +12,8 @@ public class CustomArrayID implements Comparator<CustomArray> {
             return 1;
         } else if (o1.getId() < o2.getId()) {
             return -1;
-        } else {
-            return 0;
         }
+        return 0;
+
     }
 }

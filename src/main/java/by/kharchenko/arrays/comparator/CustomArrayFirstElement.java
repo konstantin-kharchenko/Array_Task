@@ -23,9 +23,9 @@ public class CustomArrayFirstElement implements Comparator<CustomArray> {
                 return 1;
             } else if (element1 < element2) {
                 return -1;
-            } else {
-                return 0;
             }
+            return 0;
+
         } catch (CustomException e) {
             LOGGER.log(Level.ERROR, e.getMessageName());
         }

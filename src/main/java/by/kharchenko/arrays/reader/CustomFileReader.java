@@ -32,8 +32,7 @@ public class CustomFileReader {
         emptyCheck(path);
         Path pathClass = Paths.get(path);
         List<String> lines = Files.lines(pathClass).toList();
-        for (var s : lines
-        ) {
+        for (var s : lines) {
             if (ValidateLine.validate(s)) {
                 return CustomParser.parse(s);
             }
@@ -49,8 +48,7 @@ public class CustomFileReader {
         Path pathClass = Paths.get(path);
         List<String> lines = Files.lines(pathClass).toList();
         List<CustomArray> customArrays = null;
-        for (var s : lines
-        ) {
+        for (var s : lines) {
             if (ValidateLine.validate(s)) {
                 if (customArrays == null) {
                     customArrays = new ArrayList<>();
