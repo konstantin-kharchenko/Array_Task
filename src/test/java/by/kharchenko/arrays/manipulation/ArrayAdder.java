@@ -6,7 +6,11 @@ import by.kharchenko.arrays.entity.CustomArrayParameters;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArrayAdder {
+public final class ArrayAdder {
+
+    private ArrayAdder() {
+
+    }
 
     public static List<CustomArray> addCustomArrayToList(CustomArray... arrays) {
         List<CustomArray> customArrays = new ArrayList<>();

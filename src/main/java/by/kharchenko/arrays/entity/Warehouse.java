@@ -11,7 +11,7 @@ public class Warehouse {
     private static Warehouse instance;
     private Map<Integer, CustomArrayParameters> customArrayValuesMap;
 
-    public Warehouse() {
+    private Warehouse() {
         customArrayValuesMap = new HashMap<>();
     }
 

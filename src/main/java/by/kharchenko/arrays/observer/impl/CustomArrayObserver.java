@@ -11,7 +11,6 @@ import by.kharchenko.arrays.service.impl.ArrayElementsManipulationImpl;
 
 public class CustomArrayObserver implements Observer {
 
-
     @Override
     public void update(CustomArrayEvent event) throws CustomException {
 

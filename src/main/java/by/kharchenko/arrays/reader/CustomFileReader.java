@@ -18,7 +18,11 @@ import java.util.List;
 public class CustomFileReader {
 
     private static final Logger LOGGER = LogManager.getLogger(CustomFileReader.class);
+
     private static CustomFileReader instance;
+
+    private CustomFileReader() {
+    }
 
     public static CustomFileReader getInstance() {
         if (instance == null) {

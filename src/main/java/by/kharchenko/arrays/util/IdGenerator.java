@@ -1,6 +1,6 @@
 package by.kharchenko.arrays.util;
 
-public class IdGenerator {
+public final class IdGenerator {
 
     private static int counter;
 

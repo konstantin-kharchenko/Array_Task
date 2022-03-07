@@ -6,8 +6,13 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class CustomCheck {
+public final class CustomCheck {
+
     private static final Logger LOGGER = LogManager.getLogger(CustomArray.class);
+
+    private CustomCheck() {
+
+    }
 
     public static void nullCheck(Object o) throws CustomException {
         if (o == null) {
